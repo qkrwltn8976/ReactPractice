@@ -11,9 +11,9 @@ const comments = [
 ]
  */
 const commentsFromServer = [
-  { name: 'Jisu Park', content: 'My comment!' },
-  { name: '현빈', content: '이게 최선입니까? 확실해요?' },
-  { name: '리정혁', content: '세리동무-' }
+  { id: 1, name: 'Jisu Park', content: 'My comment!' },
+  { id: 2, name: '현빈', content: '이게 최선입니까? 확실해요?' },
+  { id: 3, name: '리정혁', content: '세리동무-' }
 ];
 
 var timer;
@@ -37,7 +37,13 @@ class App extends React.Component {
         this.setState({
           comments: comments
         })
-      } else if (timer) {
+      } else if (comments.length > 0) {
+        comments.pop();
+        this.setState({
+          comments: comments
+        })
+      }
+      else if (timer) {
         clearInterval(timer);
       }
     }, 1000);
@@ -65,6 +71,8 @@ class App extends React.Component {
           {comments.map((comment, index) => {
             return (
               <Comment
+                key={comment.id}
+                id={comment.id}
                 name={comment.name}
                 content={comment.content} />
             )
