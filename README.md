@@ -13,3 +13,5 @@
 ### 05 State and Lifecycle
 * state 사용해보기
 * Component Lifecycle 살펴보기
+### 06 Handling Events
+* 클릭 이벤트 처리하기
