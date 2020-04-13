@@ -1,16 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
+import Chapter06 from './Chapter06';
 import * as serviceWorker from './serviceWorker';
 import { render } from '@testing-library/react';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-); 
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// ); 
+ReactDOM.render(<Chapter06 />, document.getElementById('root'));
 
 /** JSX 코드 작성해보기
 --> JSX로 변환
