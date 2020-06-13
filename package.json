@@ -1,0 +1,24 @@
+{
+  "name": "reactpractice",
+  "version": "1.0.0",
+  "description": "처음 만난 React(리액트)",
+  "main": "index.js",
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qkrwltn8976/ReactPractice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qkrwltn8976/ReactPractice/issues"
+  },
+  "homepage": "https://github.com/qkrwltn8976/ReactPractice#readme"
+}
