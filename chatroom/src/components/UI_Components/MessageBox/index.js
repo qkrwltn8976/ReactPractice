@@ -25,6 +25,16 @@ function MessageBox({ text, type }) {
         type:"me",
         name: "지수",
         profile: "https://cdn2.vectorstock.com/i/1000x1000/20/76/man-avatar-profile-vector-21372076.jpg"
+    }, {
+        text:"종강을 원해요",
+        type:"me",
+        name: "지수",
+        profile: "https://cdn2.vectorstock.com/i/1000x1000/20/76/man-avatar-profile-vector-21372076.jpg"
+    }, {
+        text:"제발여",
+        type:"others",
+        name: "DDP",
+        profile: "https://cdn2.vectorstock.com/i/1000x1000/20/76/man-avatar-profile-vector-21372076.jpg"
     }]
     return (
     <Fragment>{messages.map(message => 
