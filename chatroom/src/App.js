@@ -8,13 +8,14 @@ import SearchBox from './components/UI_Components/SearchDiv/index';
 import ButtonBox from './components/UI_Components/ButtonBox/index';
 import { WrapmsgrHeader3 } from './components';
 import WrapmsgrContent from './components/UI_Components/WrapmsgrContent';
+import './resources/css/base.css';
 
 class App extends Component {
   render() {
     return (
       <Fragment>
         <div className="wrapmsgr_container">
-          <div className="wrapmsgr_chat" ng-class="[chatroomState, viewModeClass, {false: 'disabled'}[loggedIn]]" ng-show="current.convo">
+          <div className="wrapmsgr_chat wrapmsgr_state_normalize wrapmsgr_viewmode_full" ng-class="[chatroomState, viewModeClass, {false: 'disabled'}[loggedIn]]" ng-show="current.convo">
             <WrapmsgrHeader3 />
             <WrapmsgrContent />
             {/* <RoomInfo>

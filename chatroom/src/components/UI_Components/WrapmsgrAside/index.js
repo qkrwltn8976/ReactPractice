@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import '../../../resources/css/wrapmsgr.css';
+import '../../../resources/css/wrapmsgr-components.css';
 import SearchDiv from '../SearchDiv';
 
 function WrapmsgrAside() {
